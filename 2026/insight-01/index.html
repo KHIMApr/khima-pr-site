@@ -49,6 +49,11 @@
   .stat .l{ font-size:13px; font-weight:700; color:var(--sub); margin-top:5px; line-height:1.35; }
   .src{ font-size:13px; color:var(--faint); margin-top:12px; border-top:1px solid var(--line); padding-top:10px; }
   .src a{ color:var(--c-accent); word-break:break-all; }
+  .source-links{ display:flex; flex-wrap:wrap; gap:7px; margin-top:10px; }
+  .source-link{ display:inline-block; color:var(--c-accent); background:var(--c-accent-bg);
+        border:1px solid var(--c-accent-line); border-radius:999px; padding:4px 10px;
+        font-size:12.5px; font-weight:800; text-decoration:none; }
+  .source-link:hover,.source-link:focus{ text-decoration:underline; outline:2px solid transparent; }
   .item{ border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:12px 0; }
   .item .t{ font-size:17px; font-weight:800; line-height:1.4; }
   .item .d{ font-size:14px; color:var(--sub); margin-top:6px; }
@@ -81,7 +86,7 @@
   <p class="sign">KHIMA 홍보위원회</p>
 </section>
 
-<section>
+<section data-source-required>
   <span class="corner-tag">이번 주 핵심</span>
   <h1>"보건소에서도 대학병원급 AI 진료" —<br>AI 대전환, <span style="color:var(--c-accent)">실행이 시작됐다</span></h1>
   <p class="meta">보건복지부 보도자료 · 2026. 8. 6. 등록 · 의료인공지능데이터정책과 · 원문 대조 확인</p>
@@ -108,7 +113,13 @@
   <p>복지부·한국보건산업진흥원이 <b>AI 응용제품 신속 상용화 지원사업(AX-Sprint)</b> 6개 분야 컨소시엄을 선정했습니다. 뇌졸중·파킨슨·유방암·위암 진단보조와 부정맥·심혈관 위험 예측 AI를 22개 이상 병원에서 임상 실증하고, <b>건강보험 수가 적용</b>과 <b>실사용 데이터 25만 건 축적</b>을 목표로 합니다.</p>
   <div class="bizbox"><span class="tag">경영 연결</span>AI 진단보조가 수가로 들어오면 청구·명세서 체계에 새 항목이 생깁니다. 7월 심평원의 「AI 의료기술 급여 적정성 평가기준」 연구(아래 코너 참조)와 같은 궤도 — 제도 준비가 양쪽에서 진행 중입니다.</div>
 
-  <p class="src">출처: 보건복지부 보도자료 「우리 동네 보건소에서도 대학병원급 AI 진료」(2026-08-06, list_no=1491534) · 「AI가 뇌졸중·파킨슨·유방암 진단 돕는다」(2026-08-04, list_no=1491517) · 「이제는 실행의 시기」(2026-08-06, list_no=1491535) — 모두 mohw.go.kr 원문 페이지에서 등록일·내용 확인(2026-08-06 22시 기준)</p>
+  <div class="src">출처: 보건복지부 보도자료 — 모두 원문 페이지에서 등록일·내용 확인(2026-08-06 22시 기준)
+    <div class="source-links">
+      <a class="source-link" href="https://www.mohw.go.kr/board.es?mid=a10503010100&amp;bid=0027&amp;act=view&amp;list_no=1491534" target="_blank" rel="noopener noreferrer">원문 ① 우리 동네 보건소에서도 대학병원급 AI 진료 ↗</a>
+      <a class="source-link" href="https://www.mohw.go.kr/board.es?mid=a10503010100&amp;bid=0027&amp;act=view&amp;list_no=1491517" target="_blank" rel="noopener noreferrer">원문 ② AI가 뇌졸중·파킨슨·유방암 진단 돕는다 ↗</a>
+      <a class="source-link" href="https://www.mohw.go.kr/board.es?mid=a10503010100&amp;bid=0027&amp;act=view&amp;list_no=1491535" target="_blank" rel="noopener noreferrer">원문 ③ 이제는 실행의 시기 ↗</a>
+    </div>
+  </div>
 </section>
 
 <section>
@@ -116,25 +127,34 @@
   <h1>정책이 태어나기 전 — 지금 읽어둘 보고서 5선</h1>
   <p>연구보고서는 정책의 선행지표입니다. 심평원·건보공단 발간물 중 보건의료정보관리 직무와 직결되는 최신 자료를 골랐습니다. <b>정확하고 완전한 분류가 정당한 보상과 데이터 품질로 이어진다</b>는 것 — 이 코너가 추적할 사슬입니다.</p>
 
-  <div class="item">
+  <div class="item" data-source-required>
     <div class="t">KDRG V4.7 · 신포괄용 V1.6 · KOPG V2.7 분류집 일괄 개정 <span class="flag ok">발행일 확인</span></div>
     <div class="d">심평원 전자자료 · 2026. 1. 20.~27. 게시 — 입원(KDRG)·외래(KOPG) 환자분류체계의 실무 기준 최신판. 질병군 그룹핑이 바뀌면 CMI가 움직입니다. 분류 실무자의 필수 대조 자료.</div>
+    <div class="source-links">
+      <a class="source-link" href="https://www.hira.or.kr/ebooksc/2026/01/BZ202601272870622.pdf" target="_blank" rel="noopener noreferrer">KDRG V4.7 원문 ↗</a>
+      <a class="source-link" href="https://www.hira.or.kr/ebooksc/2026/01/BZ202601272870642.pdf" target="_blank" rel="noopener noreferrer">신포괄용 V1.6 원문 ↗</a>
+      <a class="source-link" href="https://www.hira.or.kr/ebooksc/2026/01/BZ202601202839800.pdf" target="_blank" rel="noopener noreferrer">KOPG V2.7 원문 ↗</a>
+    </div>
   </div>
-  <div class="item">
+  <div class="item" data-source-required>
     <div class="t">인공지능기반 의료기술의 급여 적정성 평가기준 개발·등재방안 연구 <span class="flag ok">게시일 확인</span></div>
     <div class="d">심평원 연구보고서(위탁) · 2026. 7. 1. 게시 — AI 의료기술이 건강보험 급여로 들어오는 기준 설계. 위 AX-Sprint의 제도적 짝. 심사·청구 실무의 다음 장을 예고합니다.</div>
+    <div class="source-links"><a class="source-link" href="https://www.hira.or.kr/ra/trend/study/getReportInfo.do?pgmid=HIRAA030095000000&amp;studyDataSeq=768" target="_blank" rel="noopener noreferrer">심평원 연구보고서 원문 ↗</a></div>
   </div>
-  <div class="item">
+  <div class="item" data-source-required>
     <div class="t">상병수당 제도화를 위한 의료인증절차 AI활용 개선방안 연구 <span class="flag">발행월 확인 중</span></div>
     <div class="d">건보공단 건강보험연구원(연구25-6) · 2025년 발간 — 진단서류·의무기록 인증 절차에 AI를 적용하는 방안. 기록 인증이 제도의 관문이 되는 사례.</div>
+    <div class="source-links"><a class="source-link" href="https://lib.nhis.or.kr/search/catalog/view.do?bibctrlno=75075&amp;se=r1&amp;ty=B" target="_blank" rel="noopener noreferrer">건보공단 전자도서관 원문 ↗</a></div>
   </div>
-  <div class="item">
+  <div class="item" data-source-required>
     <div class="t">의료기관 종별 전자의무기록 정보보안 실태와 보안 관리 인식 <span class="flag ok">게재일 확인</span></div>
     <div class="d">HIRA Research(심평원 학술지·KCI 등재) · 2025. 12. 23. 온라인 게재 — 종별 EMR 정보보안 실태 비교. 의무기록 관리 부서의 보안 역할 근거 자료.</div>
+    <div class="source-links"><a class="source-link" href="https://www.hira-research.or.kr/journal/view.html?doi=10.52937/hira.26.6.1.e1" target="_blank" rel="noopener noreferrer">HIRA Research 원문 ↗</a></div>
   </div>
-  <div class="item">
+  <div class="item" data-source-required>
     <div class="t">건강보험청구자료 환자 선정 알고리즘의 타당도 평가 고찰 <span class="flag ok">게재일 확인</span></div>
     <div class="d">HIRA Research · 2026. 4. 27. 온라인 게재 — 청구자료 기반 연구의 타당도는 코딩 품질에서 출발한다는 것을 방법론으로 보여주는 논문.</div>
+    <div class="source-links"><a class="source-link" href="https://www.hira-research.or.kr/journal/view.html?doi=10.52937/hira.26.6.1.e4" target="_blank" rel="noopener noreferrer">HIRA Research 원문 ↗</a></div>
   </div>
 
   <p class="src">각 항목은 발간기관 목록 페이지에서 제목·게시일을 확인해 수록했습니다. 세부 내용 인용 전 원문 재확인 원칙(발행월 확인 중 항목 포함). 원문은 심평원(hira.or.kr) 연구보고서·전자자료 코너, 건보공단 전자도서관(lib.nhis.or.kr), HIRA Research(hira-research.or.kr)에서 열람할 수 있습니다.</p>
