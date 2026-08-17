@@ -61,6 +61,16 @@
   --st-draft:#c0392b;         /* DRAFT 배지 — 게시 전 산출물에만 */
   --st-draft-fg:#ffffff;
 
+  /* ---- §4b 정책 단계 라벨 (투 트랙 방향, 2026-08 시범 — 상임이사회 의결 전) ----
+     모든 발행 항목 제목 앞에 [논의]/[예고]/[확정] 중 하나를 표기한다.
+     근거: 문서/방향_투트랙_단계라벨.md · 문서/홍보위원회_산출물/04(운영기준안) */
+  --stage-discuss:#b25309;              /* [논의] — 회의·검토·토론회 등 확정 전 */
+  --stage-discuss-bg:#fdf2e7;
+  --stage-notice:var(--khima-blue-600); /* [예고] — 입법예고·행정예고 등 의견 수렴 */
+  --stage-notice-bg:var(--khima-blue-100);
+  --stage-final:var(--st-done);         /* [확정] — 고시·공고·규칙 공포·시행 */
+  --stage-final-bg:var(--st-done-bg);
+
   /* ---- §5 의미 토큰 (컴포넌트는 이것만 참조) ---------------------- */
   --c-header-grad:linear-gradient(135deg,var(--khima-navy-700),var(--khima-navy-900));
   --c-accent:var(--khima-blue-600);
