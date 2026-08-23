@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHIMA 인사이트 제2호 — 평가 창구와 12월 시행</title>
+<meta property="og:title" content="KHIMA 인사이트 제2호">
+<meta property="og:description" content="의료질평가 지표값 통보, 전문 의뢰·회송 환자경험평가, CT·MRI 실시간 의료이용 관리">
+<meta property="og:type" content="article">
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:var(--font-sans); color:var(--ink); background:var(--bg);
+        word-break:keep-all; overflow-wrap:break-word; line-height:1.6; }
+  .logo-band{ background:#fff; border-bottom:1px solid var(--line); padding:14px 20px; text-align:center; }
+  .logo-band img{ height:36px; width:auto; }
+  .masthead{ background:var(--c-header-grad); color:var(--ink-invert); padding:36px 20px 28px; text-align:center; }
+  .masthead .brand{ font-size:32px; font-weight:900; letter-spacing:-.5px; }
+  .masthead .brand small{ font-weight:700; opacity:.85; font-size:14px; display:block; margin-top:6px; letter-spacing:1.5px; }
+  .masthead .issue{ display:inline-block; margin-top:14px; font-size:14px; font-weight:700;
+        background:rgba(255,255,255,.16); padding:5px 16px; border-radius:20px; }
+  main{ max-width:760px; margin:0 auto; padding:28px 18px 40px; }
+  section{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-box);
+        padding:24px 22px; margin-bottom:18px; }
+  .corner-tag{ display:inline-block; font-size:13px; font-weight:800; color:var(--c-accent);
+        background:var(--c-accent-bg); border:1px solid var(--c-accent-line);
+        padding:3px 12px; border-radius:999px; margin-bottom:12px; }
+  h1{ font-size:24px; line-height:1.35; letter-spacing:-.5px; margin-bottom:8px; }
+  h2{ font-size:18px; line-height:1.4; margin:0 0 6px; }
+  .meta{ font-size:13px; color:var(--faint); margin-bottom:10px; }
+  p{ font-size:16px; margin:8px 0; }
+  ul.glance{ margin:8px 0 0 0; padding:0; list-style:none; }
+  ul.glance li{ font-size:15.5px; margin:7px 0; padding-left:18px; position:relative; }
+  ul.glance li::before{ content:"›"; position:absolute; left:0; color:var(--c-accent); font-weight:800; }
+  .item{ border:1px solid var(--line); border-radius:10px; padding:16px 16px 14px; margin:14px 0 0; }
+  .badges{ display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin-bottom:6px; }
+  .stage{ font-size:11.5px; font-weight:800; padding:2px 8px; border-radius:4px; }
+  .stage.final{ color:var(--stage-final); background:var(--stage-final-bg); }
+  .stage.discuss{ color:var(--stage-discuss); background:var(--stage-discuss-bg); }
+  .rank{ font-size:11.5px; font-weight:700; color:#fff; background:var(--c-hot); border-radius:4px; padding:2px 8px; }
+  .rank.aux{ background:var(--sub); }
+  table.facts{ width:100%; border-collapse:collapse; margin:8px 0; font-size:14.5px; }
+  table.facts th, table.facts td{ border:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align:top; }
+  table.facts th{ width:26%; background:var(--c-accent-bg); color:var(--khima-navy-700); }
+  .keybox{ background:var(--c-key-bg); border:1px solid var(--c-key-line); border-left:5px solid var(--c-key);
+        border-radius:8px; padding:11px 14px; margin:10px 0; font-size:14.5px; }
+  .keybox .tag{ display:inline-block; background:var(--c-key); color:#fff; font-size:12px; font-weight:800;
+        padding:2px 8px; border-radius:4px; margin-right:6px; }
+  .bizbox{ background:var(--c-accent-bg); border:1px solid var(--c-accent-line); border-left:5px solid var(--logo-deepblue);
+        border-radius:8px; padding:11px 14px; margin:10px 0; font-size:14.5px; }
+  .bizbox .tag{ display:inline-block; background:var(--logo-deepblue); color:#fff; font-size:12px; font-weight:800;
+        padding:2px 8px; border-radius:4px; margin-right:6px; }
+  .source-links{ display:flex; flex-wrap:wrap; gap:7px; margin-top:8px; }
+  .source-link{ display:inline-block; color:var(--c-accent); background:var(--c-accent-bg);
+        border:1px solid var(--c-accent-line); border-radius:999px; padding:4px 10px;
+        font-size:12.5px; font-weight:800; text-decoration:none; }
+  .disc{ font-size:13px; color:var(--faint); line-height:1.6; }
+  footer{ text-align:center; font-size:13px; color:var(--faint); padding:0 20px 40px; }
+  footer a{ color:var(--c-accent); }
+</style>
+</head>
+<body>
+<div class="logo-band">
+  <img src="data:image/png;base64,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" alt="대한보건의료정보관리사협회">
+</div>
+<header class="masthead">
+  <div class="brand">KHIMA 인사이트<small>보건의료정보관리사의 눈으로 읽는 정책·데이터 브리핑</small></div>
+  <div class="issue">제2호 · 2026. 8. 23. · KHIMA 홍보위원회 · 관리번호 KI-2026-002</div>
+</header>
+<main>
+<section>
+  <span class="corner-tag">이번 주 한눈에</span>
+  <h1>평가 창구가 열리고, 12월 시행이 날짜를 받았습니다</h1>
+  <p class="meta">수록 범위 2026-08-14 ~ 08-22 · 원기관 원문 대조 · 위원장 확인 2026-08-23</p>
+  <ul class="glance">
+    <li><b>[확정]</b> 2026년 의료질평가 지표값 통보 — 8. 19.부터 e-평가시스템 확인, 정정신청 14일(18:00)</li>
+    <li><b>[확정]</b> 상급종합 구조전환 「전문 의뢰·회송 환자경험평가」 — 조사 2026. 8.~12. 모바일웹</li>
+    <li><b>[확정]</b> 실시간 의료이용 관리, CT·MRI를 관리항목으로 심의 — 시행 2026. 12. 24.</li>
+    <li><b>[논의]</b> 국가생명윤리심의위, AI·보건의료 데이터 특별전문위 운영계획 심의</li>
+    <li><b>[논의]</b> 비대면진료 약 배송 확대 논의 · 약국 재고정보 제공 고도화</li>
+  </ul>
+  <p class="disc" style="margin-top:12px">단계 라벨: <b>확정</b>은 공고·시행 안내처럼 효력이나 일정이 공고된 것, <b>논의</b>는 확정 전 단계입니다. 논의 항목을 시행으로 읽지 마십시오.</p>
+</section>
+
+<section class="item" data-source-required>
+  <div class="badges"><span class="stage final">확정</span><span class="rank">★ 핵심</span></div>
+  <h2>2026년 의료질평가 지표값 통보 및 정정신청</h2>
+  <p class="meta">건강보험심사평가원 평가보상부 · 등록일 2026-08-19 · 관련 공문 의료체계혁신과-147호(2026. 8. 18.)</p>
+  <table class="facts">
+    <tr><th>지표값 확인</th><td>e-평가시스템에서 2026. 8. 19.(수)부터 기관별 지표값 확인</td></tr>
+    <tr><th>정정신청 기한</th><td>통보받은 날로부터 14일 이내(마감일 18:00). 정정신청서와 증빙을 평가보상부로 제출</td></tr>
+    <tr><th>단서</th><td>적정성평가 4개 항목(신생아중환자실, 항생제 처방률, 급성기뇌졸중, 환자경험)은 이의신청 진행 중. 인정된 경우에 한해 의료질평가 결과에 반영 가능</td></tr>
+  </table>
+  <div class="keybox"><span class="tag">HIM 핵심</span>지표 수치 자체는 공지 본문에 없습니다. 확인·정정은 평가자료와 의무기록 정합 문제입니다.</div>
+  <div class="bizbox"><span class="tag">홍보위원회 제언</span>14일·18시 마감은 현장 여유가 아니라 책임 전가 창구가 되기 쉽습니다. 누가 어떤 권한으로 원자료를 대조하는지는 공지에 없습니다. 정정 성공·기각 사유와 필요 증빙을 병원이 같이 쓸 체크리스트로 먼저 정리해야 합니다.</div>
+  <div class="source-links">
+    <a class="source-link" href="https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&amp;brdScnBltNo=4&amp;brdBltNo=12213" target="_blank" rel="noopener noreferrer">심평원 원문 보기 ↗</a>
+  </div>
+</section>
+
+<section class="item" data-source-required>
+  <div class="badges"><span class="stage final">확정</span><span class="rank">★ 핵심</span></div>
+  <h2>전문 의뢰·회송 환자경험평가 시행</h2>
+  <p class="meta">건강보험심사평가원 전달체계기획부 · 등록일 2026-08-18 · 상급종합병원 구조전환 지원사업 관련</p>
+  <table class="facts">
+    <tr><th>대상기관</th><td>상급종합병원 및 기반구축 지원대상 진료협력병원</td></tr>
+    <tr><th>대상환자</th><td>전문 의뢰 또는 전문 회송을 경험한 만 19세 이상 의과 환자 중 사업 참여 및 개인정보 수집·이용·제3자 제공에 동의한 환자</td></tr>
+    <tr><th>조사</th><td>2026년 8월~12월(약 5개월) · 모바일웹 · 한국능률협회컨설팅</td></tr>
+  </table>
+  <div class="keybox"><span class="tag">HIM 핵심</span>대상자 추출·동의·개인정보 제공 범위가 실무 접점입니다. 세부 서식은 첨부파일에 있습니다.</div>
+  <div class="bizbox"><span class="tag">홍보위원회 제언</span>동의한 환자만 넣으면 점수는 전달체계 질이 아니라 동의 수집 역량을 잴 수 있습니다. 명단 일이 HIM에 떨어져도 정책 문서에 직무로 적힌 것은 아닙니다.</div>
+  <div class="source-links">
+    <a class="source-link" href="https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&amp;brdScnBltNo=4&amp;brdBltNo=12209" target="_blank" rel="noopener noreferrer">심평원 원문 보기 ↗</a>
+  </div>
+</section>
+
+<section class="item" data-source-required>
+  <div class="badges"><span class="stage final">확정</span><span class="rank">★ 핵심</span></div>
+  <h2>실시간 의료이용 관리 — CT·MRI, 2026. 12. 24. 시행</h2>
+  <p class="meta">건강보험심사평가원 적정의료이용추진본부 · 등록일 2026-08-14 · 적정의료이용심의위원회 2026. 8. 10.</p>
+  <table class="facts">
+    <tr><th>관리 대상</th><td>CT 다-245, 다-245-1 Cone Beam / MRI 다-246</td></tr>
+    <tr><th>제외</th><td>중재적 시술 유도 및 제한적 촬영(방사선 치료범위의 결정 등)</td></tr>
+    <tr><th>관리 방법</th><td>요양기관이 요양급여내역 확인시스템으로 확인하고 촬영 후 제출. 심평원은 환자별로 누적·관리해 진료 시 의료진에게 제공</td></tr>
+  </table>
+  <p>같은 날 안내된 사전 설명회는 2026. 8. 24.(월) 14:00~16:00, 대상은 자체 전산 개발 의료기관 및 청구 소프트웨어 업체입니다. 사전등록 기한은 2026. 8. 20. 18:00까지로 안내되어 있습니다.</p>
+  <div class="keybox"><span class="tag">HIM 핵심</span>행위코드와 촬영정보 제출이 청구·전산과 만납니다. 제출 누락·제외 산정은 첨부 계획 원문을 확인하기 전에 단정하지 마십시오.</div>
+  <div class="bizbox"><span class="tag">홍보위원회 제언</span>시행일과 코드는 이미 박혀 있습니다. 설명회 대상이 전산·SW라는 점은, 사고가 나면 책임이 기록·청구로 밀릴 신호입니다. 제출 누락의 책임 주체와 의무기록 일치 확인 절차를 도입 전에 요구해야 합니다.</div>
+  <div class="source-links">
+    <a class="source-link" href="https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&amp;brdScnBltNo=4&amp;brdBltNo=12207" target="_blank" rel="noopener noreferrer">계획 원문 ↗</a>
+    <a class="source-link" href="https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&amp;brdScnBltNo=4&amp;brdBltNo=12208" target="_blank" rel="noopener noreferrer">설명회 원문 ↗</a>
+  </div>
+</section>
+
+<section class="item" data-source-required>
+  <div class="badges"><span class="stage discuss">논의</span><span class="rank aux">☆ 보조</span></div>
+  <h2>국가생명윤리심의위, AI·보건의료 데이터 특별전문위 운영계획 심의</h2>
+  <p class="meta">보건복지부 생명윤리정책과 · 작성일 2026-08-14 · 제7기 위원회 제1차 정기회의</p>
+  <p>연명의료결정제도 개선 특별전문위원회(전문가 14인, 연내 권고안 목표)와 AI 및 보건의료 데이터 활용 특별전문위원회(다학제 13인) 운영계획(안)을 심의했다고 밝혔습니다. 후자는 정보주체 권리, 데이터 거버넌스, 동의·가명정보·심의 절차 등 제도개선 권고안 마련을 예정합니다. 시행 일정·의무는 이번 보도에 없습니다.</p>
+  <div class="bizbox"><span class="tag">홍보위원회 제언</span>방향은 중요하지만, 이번 보도의 위원회 구성에 기록관리 전문직은 보이지 않습니다. ‘들어가야 한다’고 선언하기보다 동의 철회·정정·재식별 점검에서 기록 부서가 실제로 하는 일을 1장으로 제출해야 합니다.</div>
+  <div class="source-links">
+    <a class="source-link" href="https://www.mohw.go.kr/board.es?mid=a10503000000&amp;bid=0027&amp;act=view&amp;list_no=1491600" target="_blank" rel="noopener noreferrer">복지부 원문 보기 ↗</a>
+  </div>
+</section>
+
+<section class="item" data-source-required>
+  <div class="badges"><span class="stage discuss">논의</span><span class="rank aux">☆ 보조</span></div>
+  <h2>비대면진료 약 배송 확대 논의 · 약국 재고정보 제공 고도화</h2>
+  <p class="meta">보건복지부 약무정책과 · 작성일 2026-08-20</p>
+  <p>복지부는 비대면 약 배송 확대를 논의하고 약국 재고정보 제공 체계 고도화를 추진한다고 밝혔습니다. 보도에 따르면 12. 24. 의료법 개정안 시행에 맞춰 섬·벽지, 장기요양수급자, 장애인, 감염병환자, 희귀질환자에 한해 약 배송이 허용될 예정이며, 전담약국 금지 등을 담은 하위법령을 마련 중입니다. 대상 확대는 논의 단계입니다. HIM 직무 직접 의무는 본문에 없습니다.</p>
+  <div class="bizbox"><span class="tag">홍보위원회 제언</span>약국·중개업자 의제입니다. 이것을 HIM 직무 확대로 읽으면 과장입니다. 원내 처방 데이터의 생성·정정 경로가 모호하지 않은지만 보면 충분합니다.</div>
+  <div class="source-links">
+    <a class="source-link" href="https://www.mohw.go.kr/board.es?mid=a10503000000&amp;bid=0027&amp;act=view&amp;list_no=1491628" target="_blank" rel="noopener noreferrer">복지부 원문 보기 ↗</a>
+  </div>
+</section>
+
+<section>
+  <p class="disc">본지는 정부·공공기관 공표 자료(공공저작물)를 바탕으로 KHIMA 홍보위원회가 생성형 AI를 활용해 작성·제작하고, 원문과 대조·검수한 것입니다. 홍보위원회 제언은 위원장이 2026-08-23 확인한 내부 검토안을 다듬은 것이며, 법령·고시 원문을 대체하지 않습니다. 각 사안의 최종 기준은 관련 원문을 따릅니다.</p>
+</section>
+</main>
+
+<section style="max-width:760px; margin:0 auto 20px; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px 24px;">
+  <div style="font-size:13px; font-weight:800; color:var(--sub); letter-spacing:1px; margin-bottom:10px;">발행 정보</div>
+  <table style="width:100%; border-collapse:collapse; font-size:13.5px; color:var(--sub);">
+    <tr><td style="padding:3px 12px 3px 0; white-space:nowrap; font-weight:700;">제호</td><td>KHIMA 인사이트 (제2호 · 관리번호 KI-2026-002)</td></tr>
+    <tr><td style="padding:3px 12px 3px 0; font-weight:700;">발행처</td><td>대한보건의료정보관리사협회 홍보위원회</td></tr>
+    <tr><td style="padding:3px 12px 3px 0; font-weight:700;">발행일</td><td>2026년 8월 23일 · 발행주기: 주간(웹)</td></tr>
+    <tr><td style="padding:3px 12px 3px 0; font-weight:700;">편집·제작</td><td>KHIMA 홍보위원회 · AI 제작지원: Claude / Hermes</td></tr>
+    <tr><td style="padding:3px 12px 3px 0; font-weight:700;">문의</td><td>협회 사무국 (khima.or.kr)</td></tr>
+  </table>
+  <p style="font-size:12.5px; color:var(--faint); line-height:1.6; margin-top:12px;">
+    ⓒ 대한보건의료정보관리사협회. 본지는 출처(KHIMA 인사이트·관리번호)를 밝히는 조건으로 회원과 소속 기관 내 공유를 환영합니다. 무단 변형·상업적 이용은 허용하지 않습니다.<br>
+    본지는 보건복지부·건강보험심사평가원 등 공공기관이 공개한 공공저작물을 출처 표시 조건에 따라 이용하였습니다. 본지의 내용은 정보 제공을 위한 것으로 법적 효력을 갖지 않으며, 각 사안의 최종 기준은 관련 법령·고시 원문에 따릅니다.
+  </p>
+</section>
+<footer>
+  KHIMA 인사이트 KI-2026-002 · <a href="../../index.html">발행물 아카이브</a>
+</footer>
+</body>
+</html>
